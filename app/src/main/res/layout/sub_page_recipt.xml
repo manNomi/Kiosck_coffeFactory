@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:text="영수증"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="455dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:theme="@style/Theme">
+
+                <TextView
+                    android:id="@+id/textView123456"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="아메리카노 * 1 = 4500"
+                    android:textSize="25dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView123456123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="카페라떼 * 1 = 4500"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView123456123123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="총합: 9000\n카드결제\n매장식사"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--위 아래 wrap 주고 위 아래를 영수증에 붙히고 height 0 주면서 꽉채우기 -->
