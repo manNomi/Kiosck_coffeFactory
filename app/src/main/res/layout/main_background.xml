@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.CategoryActivity">
 
 <LinearLayout
         android:id="@+id/linearLayoutTop"
@@ -47,29 +47,33 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/imageButton3"
-        android:text="{\\___/}\n( • ㅁ•)\n/ >🐰"
-        android:textSize="25dp"
-        android:textColor="@color/white" />
+        android:text="{\\___/}\n( • ㅁ•)\n/ &gt;🐰"
+        android:textSize="23dp"
+        android:background="@drawable/top_bot_rec"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+
+        />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@id/imageButton3"
-        android:text="■■┃■■■┃■■■┃■■■┃■■■┃■■■┃■■■■\n┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻┻\n♪~ ♬ ♪♬~♪ ♪~ ♬ ♪♬~♪ ♪~ ♬ ♪♬~♪ ♪~ ♬ ♪"
+        android:text=".　　　Music Title In Here\n0:00 ━━━━●────────── 4:00\n⇆ㅤㅤㅤㅤㅤ ◁ㅤㅤ❚❚ㅤㅤ▷ ㅤㅤㅤㅤㅤ↻\n"
         android:textSize="10dp"
         android:textColor="@color/white"/>
 
     <TextView
+        android:layout_margin="20dp"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:text="{\\___/}\n(>ㅁ<)\n🐰<\"
-        android:textSize="25dp"
+        android:text="{\\___/}\n(&gt;ㅁ&lt;)\n🐰&lt;\"
+        android:textSize="23dp"
+        android:background="@drawable/top_bot_rec"
         android:textColor="@color/white" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -79,32 +83,25 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/linearbot">
 
+
+
     <ImageButton
-        android:id="@+id/button_cart"
+        android:id="@+id/order_button_cart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/cart2"
         android:background="@drawable/background" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@mipmap/back_icon"
-        android:background="@drawable/background" />
+
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/main_fragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/linearLayoutTop"
         app:layout_constraintBottom_toTopOf="@id/linaerTop"
         ></FrameLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

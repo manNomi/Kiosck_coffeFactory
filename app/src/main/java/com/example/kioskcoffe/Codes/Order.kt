@@ -1,6 +1,6 @@
-package kiosk
+package com.example.kioskcoffe.Codes
 
-class Order(menuClass:Menu)
+class Order(menuClass: Menu)
 {
     val menu=menuClass
     val shopBasket = mutableListOf<String>()
@@ -33,9 +33,7 @@ class Order(menuClass:Menu)
         if (shopBasket[index].replace(" ","")==deleteMenu.replace(" ","")){
             shopBasket.removeAt(index)
             priceBasket.removeAt(index)
-
-            break
-        }
+            break }
         }
     }
 }

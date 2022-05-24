@@ -1,19 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-<!-- Base application theme. -->
 <style name="Theme" parent="Theme.AppCompat.Light">
     <item name="android:textColor">#ffffff</item>
     <item name="android:background">@color/mw_black</item>
-    <!--        이 프로젝트의 모든 view를 배경색에 대해 검정으로 하겠다는 뜻 -->
     <item name="android:buttonStyle">@style/FitBtnStyle</item>
     <item name="android:textViewStyle">@style/DefaultFontSizeStyle</item>
-
 </style>
-
-<!--    <style name = "FitBtnStyle" parent=""></style>-->
-<!--parent 하면 다른 테마 추가 가능 -->
-
 <style name = "FitBtnStyle">
-
     <item name="android:textAlignment">center</item>
     <item name="android:textColor">@color/white</item>
     <item name="android:gravity">center</item>
@@ -21,7 +13,6 @@
     <item name="android:textSize">20dp</item>
     <item name="background">@drawable/background</item>
 </style>
-
 <style name="DefaultFontSizeStyle">
     <item name="android:textSize">30dp</item>
 </style>

@@ -1,6 +1,6 @@
-package kiosk
+package com.example.kioskcoffe.Codes
 
-class Cal(orderClass:Order) {
+class Cal(orderClass: Order) {
     val ord = orderClass
     var total = 0
     var pay = 0
@@ -56,7 +56,6 @@ class Cal(orderClass:Order) {
                         continue
                     }
                 }
-
                 receipt()
                 break
             }

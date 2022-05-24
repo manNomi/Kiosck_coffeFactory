@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    >
 
 
     <LinearLayout
@@ -35,43 +35,38 @@
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="455dp"
-            android:layout_marginBottom="120dp"
-            android:background="@drawable/background"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.558"
-            app:layout_constraintStart_toStartOf="parent">
-
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:theme="@style/Theme">
-
+                android:orientation="vertical">
                 <TextView
                     android:id="@+id/textView123456"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="아메리카노 * 1 = 4500"
                     android:textSize="25dp"
-
-                    />
+                    android:background="@drawable/background" />
 
                 <TextView
                     android:id="@+id/textView123456123"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="카페라떼 * 1 = 4500"
-                    android:textSize="25dp" />
+                    android:textSize="25dp"
+                    android:background="@drawable/background"
+                    />
 
                 <TextView
                     android:id="@+id/textView123456123123"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="총합: 9000\n카드결제\n매장식사"
-                    android:textSize="25dp" />
+                    android:textSize="25dp"
+                    android:background="@drawable/background"
+                    />
 
 
             </LinearLayout>

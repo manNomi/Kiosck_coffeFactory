@@ -1,10 +1,12 @@
-package kiosk
+package com.example.kioskcoffe.Codes
+
+import com.example.kioskcoffe.Codes.Cal
 
 class kiosck
 {
     val menu=Menu()
     val ord=Order(menu)
-    val cal=Cal(ord)
+    val cal= Cal(ord)
     var orderCheck =""
     var calCheck=""
 
